@@ -1,0 +1,8 @@
+{
+  "images" : [
+    { "idiom" : "universal", "scale" : "1x" },
+    { "idiom" : "universal", "scale" : "2x" },
+    { "filename" : "fp_371bb8d4a79365a4@3x.png", "idiom" : "universal", "scale" : "3x" }
+  ],
+  "info" : { "author" : "xcode", "version" : 1 }
+}

@@ -1,0 +1,1104 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		047E9260D0DE8A541CD0C06C /* VictorMono-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F954B509BD9BE23A2DE4123B /* VictorMono-ThinItalic.ttf */; settings = {ASSET_TAGS = (Fonts.VictorMono, ); }; };
+		0909E3B5291DD4369F9A30CE /* MinSettingChrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8ADA9019BADCBD967DD8F7 /* MinSettingChrome.swift */; };
+		0B32AE2E285F19C72FAC7D9E /* 呆萌手写体.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2F5EB4CBBB07DF78EC6D7586 /* 呆萌手写体.otf */; settings = {ASSET_TAGS = (Fonts.DaiMeng, ); }; };
+		12CCDDC1445191606D362AC2 /* 仓耳非白W04.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 295EC4F565A3680A438AFEFC /* 仓耳非白W04.ttf */; settings = {ASSET_TAGS = (Fonts.CangErFeiBai, ); }; };
+		198A33BAD304E7ADEE32558D /* 仓耳非白W02.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0A8E23F6EDF34CB6A975C3D /* 仓耳非白W02.ttf */; settings = {ASSET_TAGS = (Fonts.CangErFeiBai, ); }; };
+		25EE86865C6D3CA57BAE6DB0 /* ODRFontCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B0DF7D93D1C533E673E5A /* ODRFontCatalog.swift */; };
+		2A8BAA2B3E0E7B5AEA90071B /* WidgetStyledText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47FA57EA3900CC8DAA89257 /* WidgetStyledText.swift */; };
+		2B6F607111BA1B19997172CB /* 字制区喜脉喜欢体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B14E43B77F06F12EBD7B57C /* 字制区喜脉喜欢体.ttf */; settings = {ASSET_TAGS = (Fonts.ZiZhiQuXiMai, ); }; };
+		2B9CB56CC8D15C4FA5DF1105 /* YuFanXinYu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E07829A5E29FD2D2B4CA6DFA /* YuFanXinYu-Bold.ttf */; settings = {ASSET_TAGS = (Fonts.YuFanXinYu, ); }; };
+		2C4E0D091BB30F14286F2835 /* 新叶念体.otf in Resources */ = {isa = PBXBuildFile; fileRef = 80247C507BD64045F4AEA90B /* 新叶念体.otf */; settings = {ASSET_TAGS = (Fonts.XinYeNian, ); }; };
+		2D7414B9F33DAE510D5135EA /* 仓耳非白W03.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 318F5BBA5D96CABA9C786971 /* 仓耳非白W03.ttf */; settings = {ASSET_TAGS = (Fonts.CangErFeiBai, ); }; };
+		3233A17F2D224D03005AC537 /* MinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3233A17E2D224D03005AC537 /* MinApp.swift */; };
+		3233A1812D224D03005AC537 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3233A1802D224D03005AC537 /* ContentView.swift */; };
+		3233A1832D224D05005AC537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3233A1822D224D05005AC537 /* Assets.xcassets */; };
+		3233A1862D224D05005AC537 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3233A1852D224D05005AC537 /* Preview Assets.xcassets */; };
+		3233A18E2D225178005AC537 /* AppName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3233A18D2D225178005AC537 /* AppName.swift */; };
+		3233A1902D225184005AC537 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3233A18F2D225184005AC537 /* Item.swift */; };
+		3233A1952D2251F4005AC537 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3233A1942D2251F4005AC537 /* SearchView.swift */; };
+		3233A1972D225208005AC537 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3233A1962D225208005AC537 /* TextFieldView.swift */; };
+		3233A19A2D225242005AC537 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3233A1992D225242005AC537 /* SearchViewModel.swift */; };
+		3233A19C2D22729C005AC537 /* URLSchemeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3233A19B2D22729C005AC537 /* URLSchemeData.json */; };
+		3233A1A02D22756A005AC537 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3233A19F2D22756A005AC537 /* Launch Screen.storyboard */; };
+		3233A1B12D224D03005AC538 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3233A1B02D224D03005AC538 /* MainTabView.swift */; };
+		326CC3D62E0151910032697A /* TextAlignmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326CC3D52E01518F0032697A /* TextAlignmentModel.swift */; };
+		326CC3D72E0152FD0032697A /* TextAlignmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326CC3D52E01518F0032697A /* TextAlignmentModel.swift */; };
+		32B018E42F55831C005457D2 /* BigUIPaging in Frameworks */ = {isa = PBXBuildFile; productRef = 32B018E32F55831C005457D2 /* BigUIPaging */; };
+		32B018EA2F558400005457E1 /* MinEdgeFade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B018EB2F558400005457E1 /* MinEdgeFade.swift */; };
+		32B018EC2F558400005457E2 /* AppStoreIconStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B018ED2F558400005457E2 /* AppStoreIconStore.swift */; };
+		32B018EE2F558400005457E3 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 32B018EF2F558400005457E3 /* PrivacyInfo.xcprivacy */; };
+		32C26D3C2F7A106900D4911D /* WidgetFrameCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C26D3B2F7A106900D4911D /* WidgetFrameCalculator.swift */; };
+		32C26D3D2F7A106900D4911D /* WidgetFrameCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C26D3B2F7A106900D4911D /* WidgetFrameCalculator.swift */; };
+		347EB56F90495C634DEC54D2 /* 墨趣古风体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 838758FAE5A634A5CD9F2A86 /* 墨趣古风体.ttf */; settings = {ASSET_TAGS = (Fonts.MoQuGuFeng, ); }; };
+		4060C536DCF05CDF2467FF22 /* Ouvrieres-rassasiees.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 176B12982E6FB3261796FDA3 /* Ouvrieres-rassasiees.ttf */; settings = {ASSET_TAGS = (Fonts.Ouvrieres, ); }; };
+		4170910F3E1F4041C9E51361 /* AppGroupStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF6AE74392ED9D209CF7DAF /* AppGroupStore.swift */; };
+		4302F5074E83122844E3B376 /* AppGroupFontRegistrar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7A2C6BDC8DAF80E9014A5 /* AppGroupFontRegistrar.swift */; };
+		4BF1A29CC0768433A6944160 /* 草书(简入繁出).ttf in Resources */ = {isa = PBXBuildFile; fileRef = 331C26C84A38E1166185B75D /* 草书(简入繁出).ttf */; settings = {ASSET_TAGS = (Fonts.CaoShu, ); }; };
+		50D2EB8C4D26B0AB0AB5C206 /* 南构无恙行书.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEA84D8881F9CDD68BDC7792 /* 南构无恙行书.ttf */; settings = {ASSET_TAGS = (Fonts.NanGouWuYang, ); }; };
+		5497900B8809C403B99D45B8 /* 白路俏丽手写体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2A87A92AF908636C212C9FB /* 白路俏丽手写体.ttf */; settings = {ASSET_TAGS = (Fonts.BaiLuQiaoLi, ); }; };
+		583269CB665727AA3FA79A46 /* AppGroupFontRegistrar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7A2C6BDC8DAF80E9014A5 /* AppGroupFontRegistrar.swift */; };
+		606FEC636A12EB826BBE3B27 /* 精品点阵体_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C953419D552DE0E3D439525 /* 精品点阵体_Bold.ttf */; settings = {ASSET_TAGS = (Fonts.BoutiqueBitmap, ); }; };
+		61B6AF4C3FAC05EFC4230C14 /* Aa厚底黑.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1EA6E591BC3BF5F17C7D7F16 /* Aa厚底黑.ttf */; settings = {ASSET_TAGS = (Fonts.AaHouDiHei, ); }; };
+		664097AF2F9EEE646B50C229 /* 今年也要加油鸭.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40DA7DA597CBB32D423D763B /* 今年也要加油鸭.ttf */; settings = {ASSET_TAGS = (Fonts.JiaYouYa, ); }; };
+		674989EAE670B3E3A9189102 /* 南西初夏宋-简繁.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1602C32E18CA882263FD8287 /* 南西初夏宋-简繁.ttf */; settings = {ASSET_TAGS = (Fonts.NanXiChuXia, ); }; };
+		6A6DB651E2DAB8B95922B904 /* 重庆山城棒棒体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5F4958C4E94069F710D38F4 /* 重庆山城棒棒体.ttf */; settings = {ASSET_TAGS = (Fonts.ChongQingBangBang, ); }; };
+		73D70B19BF565A8380AA2204 /* VictorMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97178C9D6BA0452C06BA2FAB /* VictorMono-Medium.ttf */; settings = {ASSET_TAGS = (Fonts.VictorMono, ); }; };
+		7461277251E4318E0774BF68 /* Caveat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92ED72BE865DC79375139B73 /* Caveat-Bold.ttf */; settings = {ASSET_TAGS = (Fonts.Caveat, ); }; };
+		7C641A31C18043D18B2CDFEC /* 中文像素字体-方点.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6157F30891F62C4895257491 /* 中文像素字体-方点.otf */; settings = {ASSET_TAGS = (Fonts.CNPixel, ); }; };
+		7E6B8C44C187D6BCFF4BFDA6 /* YuFanXinYu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5223B9AF1969D583ED817B82 /* YuFanXinYu-Light.ttf */; settings = {ASSET_TAGS = (Fonts.YuFanXinYu, ); }; };
+		8051F25D6CB01393B79A0932 /* 精品点阵体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28AD3BB87F596DC5404E5DCB /* 精品点阵体.ttf */; settings = {ASSET_TAGS = (Fonts.BoutiqueBitmap, ); }; };
+		82024A29513971BA0DCA461B /* WidgetStyledText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47FA57EA3900CC8DAA89257 /* WidgetStyledText.swift */; };
+		837F0FEE78A4940AC3485B72 /* YuFanXinYu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 020906E5D348814863A2684C /* YuFanXinYu-Regular.ttf */; settings = {ASSET_TAGS = (Fonts.YuFanXinYu, ); }; };
+		861958978E308E1286FD3D5B /* 中文像素字体-圆点.otf in Resources */ = {isa = PBXBuildFile; fileRef = 38891F268B04F6980767A0EC /* 中文像素字体-圆点.otf */; settings = {ASSET_TAGS = (Fonts.CNPixel, ); }; };
+		89AE658B227C77BCE7D03CA4 /* VictorMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AA9644D50117A49E0B8EF31 /* VictorMono-Bold.ttf */; settings = {ASSET_TAGS = (Fonts.VictorMono, ); }; };
+		8E4562D488C27856335D3885 /* 云峰寒蝉体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7041B0BA48B8B0F333F2B725 /* 云峰寒蝉体.ttf */; settings = {ASSET_TAGS = (Fonts.YunFengHanChan, ); }; };
+		8EAD54F3529F0A0A171856C0 /* Ouvrieres-soldates.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF232CF9F0A3DB61F53632D7 /* Ouvrieres-soldates.ttf */; settings = {ASSET_TAGS = (Fonts.Ouvrieres, ); }; };
+		8F54134D9DB439F3DA7B176D /* 荷塘月色手写体+Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10DA89292ABFEF4EB2E101CF /* 荷塘月色手写体+Regular.ttf */; settings = {ASSET_TAGS = (Fonts.HeTangYueSe, ); }; };
+		919F885305A764B096D15BC6 /* VictorMono-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF55D6B07C07AB823FE143 /* VictorMono-ExtraLight.ttf */; settings = {ASSET_TAGS = (Fonts.VictorMono, ); }; };
+		97D3B15FEDC2171E9F7F2B9F /* 鸿雷小纸条青春体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 948FE7A6BEB8CD88ABBE3C86 /* 鸿雷小纸条青春体.ttf */; settings = {ASSET_TAGS = (Fonts.HongLei, ); }; };
+		983E45CB1681CDF13CEC9BB1 /* Rubik-WetPaint-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F47BB972E2D43E406E9010E /* Rubik-WetPaint-Regular.ttf */; settings = {ASSET_TAGS = (Fonts.Rubik, ); }; };
+		9C1C71F3F89115E72137C6FD /* 小可奶酪体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DB21CB804DEBBFDBF95926B /* 小可奶酪体.ttf */; settings = {ASSET_TAGS = (Fonts.XiaoKeNaiLao, ); }; };
+		9C99043B6AAAE7D7B3F6FFF2 /* 也字工厂小石头.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFF9C2769B98EA0689C12CFD /* 也字工厂小石头.ttf */; settings = {ASSET_TAGS = (Fonts.YeZiXiaoShiTou, ); }; };
+		AA0000012F80000000000001 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000012F80000000000002 /* PaywallView.swift */; };
+		AA0000012F90000000000001 /* WebSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000012F90000000000002 /* WebSheetView.swift */; };
+		AA0000022F80000000000001 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000022F80000000000002 /* SubscriptionManager.swift */; };
+		B2000001F80000000000001 /* MinSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2000001F80000000000002 /* MinSplashView.swift */; };
+		B42F963562914583FA8E564D /* YuFanXinYu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C1F371FC5D4DF18663C42D9 /* YuFanXinYu-Medium.ttf */; settings = {ASSET_TAGS = (Fonts.YuFanXinYu, ); }; };
+		BF7EE80DA2899B20442E4A98 /* Rubik-Vinyl-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 545BED47115271880B489850 /* Rubik-Vinyl-Regular.ttf */; settings = {ASSET_TAGS = (Fonts.Rubik, ); }; };
+		C0346929ADBED6B7C11A3E16 /* Rubik-Storm-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2363E8F9FE343C97DE5CE18E /* Rubik-Storm-Regular.ttf */; settings = {ASSET_TAGS = (Fonts.Rubik, ); }; };
+		C1CBA29510D8C123B783E657 /* VictorMono-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D931FB34CFBA10FCF2482C99 /* VictorMono-Light.ttf */; settings = {ASSET_TAGS = (Fonts.VictorMono, ); }; };
+		C294AC83682899DC12D7078F /* 鼎猎西大体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDE2F12791D46E1AEAFB58C5 /* 鼎猎西大体.ttf */; settings = {ASSET_TAGS = (Fonts.DingLieXiDa, ); }; };
+		C48BE9FDB1718E51B5EA2AF6 /* 仓耳非白W01.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B56D3F5243DC3511DF72700 /* 仓耳非白W01.ttf */; settings = {ASSET_TAGS = (Fonts.CangErFeiBai, ); }; };
+		C5E7E5927EEB14D5BDF05CE2 /* 文心喜乐体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F571CBD2AA49189A3BBCC4B /* 文心喜乐体.ttf */; settings = {ASSET_TAGS = (Fonts.WenxinXile, ); }; };
+		C62579AF91A688F928012484 /* 栗壳坚坚体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4046158F4F58A551421513DD /* 栗壳坚坚体.ttf */; settings = {ASSET_TAGS = (Fonts.LiKeJianJian, ); }; };
+		CE9EAD65080889C3D7F5FFFF /* TiejiliSC-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 621D7944646EFE7FEC2F898C /* TiejiliSC-Regular.otf */; settings = {ASSET_TAGS = (Fonts.Tiejili, ); }; };
+		CF55369C0CE1D739034B1D82 /* ODRFontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA68A91A06976B046DFA352 /* ODRFontManager.swift */; };
+		D4BF24C7E7857476B7E5C3C9 /* 她屿山海.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0ECD7FD6D72C95709929CB2 /* 她屿山海.ttf */; settings = {ASSET_TAGS = (Fonts.TaYuShanHai, ); }; };
+		D68798C5E4482C2ADD764615 /* MinNativeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B119FA6C14960A696E26DB /* MinNativeSheet.swift */; };
+		D7614F51861C704D4AEEC05C /* 千图小兔体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B3D6D33CA6438DC69688AD8 /* 千图小兔体.ttf */; settings = {ASSET_TAGS = (Fonts.QianTuXiaoTu, ); }; };
+		D80B7EC190149ABD066C200E /* 猫啃珠圆体 MaokenZhuyuanTi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BA3E08A554BE8D3BCDDDF41 /* 猫啃珠圆体 MaokenZhuyuanTi.ttf */; settings = {ASSET_TAGS = (Fonts.MaoKenZhuyuan, ); }; };
+		DC936BA329C8D277EEFDD4AA /* 簡語生活體.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA3CC4470CC25A9A1AE576C2 /* 簡語生活體.ttf */; settings = {ASSET_TAGS = (Fonts.JianYuShengHuo, ); }; };
+		DDF90604A2D55465F535F5DA /* poorhandwriting.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40F987D6EAA56D4F579D0AB0 /* poorhandwriting.ttf */; settings = {ASSET_TAGS = (Fonts.PoorHandwriting, ); }; };
+		DFB94A1EACD56755F73D957B /* WallpaperGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB94A1EACD56755F73D957A /* WallpaperGuideView.swift */; };
+		DFB94A1EACD56755F73D957D /* screenshot_tutorial.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DFB94A1EACD56755F73D957C /* screenshot_tutorial.mp4 */; };
+		E055E1EC7186B02070513FFD /* Caveat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33D0F1077E04782F88E50839 /* Caveat-Regular.ttf */; settings = {ASSET_TAGS = (Fonts.Caveat, ); }; };
+		E310CF0C2F5B564900F0345D /* FontSpacingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E310CF0B2F5B564900F0345D /* FontSpacingView.swift */; };
+		E3252C3F2E9182C60041C414 /* FontSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3252C3E2E9182850041C414 /* FontSetting.swift */; };
+		E3252C402E9182C60041C414 /* FontSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3252C3E2E9182850041C414 /* FontSetting.swift */; };
+		E3252C422E9183420041C414 /* FontSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3252C412E9183350041C414 /* FontSizeView.swift */; };
+		E3252C442E9183710041C414 /* FontFamilyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3252C432E9183650041C414 /* FontFamilyView.swift */; };
+		E3252C462E9183870041C414 /* FontColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3252C452E9183820041C414 /* FontColorView.swift */; };
+		E3252C572E981F030041C414 /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3252C562E981EE90041C414 /* CustomFonts.swift */; };
+		E3252C582E981F030041C414 /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3252C562E981EE90041C414 /* CustomFonts.swift */; };
+		E3252C5A2E981F490041C414 /* FontsPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3252C592E981F3B0041C414 /* FontsPickerView.swift */; };
+		E342F50C2DC6802F00F5CA39 /* CardDeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342F50B2DC6802000F5CA39 /* CardDeckView.swift */; };
+		E3438D332ED3000100DCD6D4 /* TopWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3438D322ED3000100DCD6D4 /* TopWidgetView.swift */; };
+		E3D2CE152D7C0024005A9D39 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D2CE142D7C0024005A9D39 /* WidgetKit.framework */; };
+		E3D2CE162D7C0024005A9D39 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3798C472D70C75000E1A5E9 /* SwiftUI.framework */; };
+		E3D2CE232D7C0026005A9D39 /* MinWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E3D2CE132D7C0024005A9D39 /* MinWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E3D2CE2D2D7C52E0005A9D39 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3233A18F2D225184005AC537 /* Item.swift */; };
+		E3D5BB0A2DFB120500DCB281 /* TextAlignmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D5BB092DFB120500DCB281 /* TextAlignmentView.swift */; };
+		E3E3FC3F2EB129730012025A /* WidgetViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E3FC3E2EB129470012025A /* WidgetViewView.swift */; };
+		E3E999BE2EC4DD8D001B0431 /* CustomWallpaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E999BD2EC4DD8A001B0431 /* CustomWallpaperView.swift */; };
+		E3E999C32EC4EC03001B0431 /* WidgetImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E999C22EC4EBFC001B0431 /* WidgetImageManager.swift */; };
+		E3E999D52EC4ED1F001B0431 /* WidgetImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E999C22EC4EBFC001B0431 /* WidgetImageManager.swift */; };
+		E3EC6C542DF738370094EC01 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EC6C532DF738370094EC01 /* SettingView.swift */; };
+		E3F8CCB22D6A11AB00304330 /* AppStoreSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F8CCB12D6A11A700304330 /* AppStoreSearchViewModel.swift */; };
+		E3F8CCB42D6A121200304330 /* AppStoreSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F8CCB32D6A121200304330 /* AppStoreSearchView.swift */; };
+		E3F8CCB72D6A2C4F00304330 /* URLSchemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F8CCB62D6A2C4400304330 /* URLSchemeView.swift */; };
+		E5AA2B866BC37E011043AA6F /* fusion-pixel-10px-proportional.otf in Resources */ = {isa = PBXBuildFile; fileRef = F533DC4273AF7BBC2812A347 /* fusion-pixel-10px-proportional.otf */; settings = {ASSET_TAGS = (Fonts.FusionPixel10Prop, ); }; };
+		E6E6705853392994C6F7F0EC /* ODRFontCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B0DF7D93D1C533E673E5A /* ODRFontCatalog.swift */; };
+		E8BB6B7301F522BB41B8A83B /* 明达明达无锋体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BDABE412306D2F2883A1447 /* 明达明达无锋体.ttf */; settings = {ASSET_TAGS = (Fonts.MingDaWuFeng, ); }; };
+		E921F3222EDB67DF9B22DF4E /* 阿朱泡泡体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACF5F1378C592E8AFB6F1154 /* 阿朱泡泡体.ttf */; settings = {ASSET_TAGS = (Fonts.AZhuPaoPao, ); }; };
+		EE2658D27DB6090C7E35D2F2 /* 仓耳非白W05.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AE6039258222FAEAB30A140 /* 仓耳非白W05.ttf */; settings = {ASSET_TAGS = (Fonts.CangErFeiBai, ); }; };
+		EEE36F78B36F0D8B95161B09 /* 快看世界体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3165C08984EEA63340F541C3 /* 快看世界体.ttf */; settings = {ASSET_TAGS = (Fonts.KuaiKan, ); }; };
+		F20284A9CC363C86BAD9CBC7 /* Ouvrieres-affamees.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D5C98F3D3F5980D500193A6 /* Ouvrieres-affamees.ttf */; settings = {ASSET_TAGS = (Fonts.Ouvrieres, ); }; };
+		F260F8BE4A8BC3A591707F4E /* VictorMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27D0727AF300D1F03206C729 /* VictorMono-Regular.ttf */; settings = {ASSET_TAGS = (Fonts.VictorMono, ); }; };
+		F4155DF09979966A8D438E19 /* 乡立方黑体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C65B281AAAE332A0F5EBE247 /* 乡立方黑体.ttf */; settings = {ASSET_TAGS = (Fonts.XiangLiFang, ); }; };
+		F97DC03ACF1A3B60774203F2 /* AppGroupStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF6AE74392ED9D209CF7DAF /* AppGroupStore.swift */; };
+		F9A6548DD9D6BBAA4D9E41F7 /* 抖音美好体.otf in Resources */ = {isa = PBXBuildFile; fileRef = 126726783ACDCE93A1999A0E /* 抖音美好体.otf */; settings = {ASSET_TAGS = (Fonts.DouYinMeiHao, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3D2CE212D7C0026005A9D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3233A1732D224D03005AC537 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3D2CE122D7C0024005A9D39;
+			remoteInfo = MinWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E3798C582D70C75200E1A5E9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E3D2CE232D7C0026005A9D39 /* MinWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		020906E5D348814863A2684C /* YuFanXinYu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YuFanXinYu-Regular.ttf"; sourceTree = "<group>"; };
+		0BA3E08A554BE8D3BCDDDF41 /* 猫啃珠圆体 MaokenZhuyuanTi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "猫啃珠圆体 MaokenZhuyuanTi.ttf"; sourceTree = "<group>"; };
+		10DA89292ABFEF4EB2E101CF /* 荷塘月色手写体+Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "荷塘月色手写体+Regular.ttf"; sourceTree = "<group>"; };
+		126726783ACDCE93A1999A0E /* 抖音美好体.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "抖音美好体.otf"; sourceTree = "<group>"; };
+		1602C32E18CA882263FD8287 /* 南西初夏宋-简繁.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "南西初夏宋-简繁.ttf"; sourceTree = "<group>"; };
+		176B12982E6FB3261796FDA3 /* Ouvrieres-rassasiees.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ouvrieres-rassasiees.ttf"; sourceTree = "<group>"; };
+		1AA9644D50117A49E0B8EF31 /* VictorMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VictorMono-Bold.ttf"; sourceTree = "<group>"; };
+		1EA6E591BC3BF5F17C7D7F16 /* Aa厚底黑.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Aa厚底黑.ttf"; sourceTree = "<group>"; };
+		1F571CBD2AA49189A3BBCC4B /* 文心喜乐体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "文心喜乐体.ttf"; sourceTree = "<group>"; };
+		2363E8F9FE343C97DE5CE18E /* Rubik-Storm-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Storm-Regular.ttf"; sourceTree = "<group>"; };
+		27D0727AF300D1F03206C729 /* VictorMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VictorMono-Regular.ttf"; sourceTree = "<group>"; };
+		28AD3BB87F596DC5404E5DCB /* 精品点阵体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "精品点阵体.ttf"; sourceTree = "<group>"; };
+		295EC4F565A3680A438AFEFC /* 仓耳非白W04.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "仓耳非白W04.ttf"; sourceTree = "<group>"; };
+		2B14E43B77F06F12EBD7B57C /* 字制区喜脉喜欢体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "字制区喜脉喜欢体.ttf"; sourceTree = "<group>"; };
+		2F47BB972E2D43E406E9010E /* Rubik-WetPaint-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-WetPaint-Regular.ttf"; sourceTree = "<group>"; };
+		2F5EB4CBBB07DF78EC6D7586 /* 呆萌手写体.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "呆萌手写体.otf"; sourceTree = "<group>"; };
+		3165C08984EEA63340F541C3 /* 快看世界体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "快看世界体.ttf"; sourceTree = "<group>"; };
+		318F5BBA5D96CABA9C786971 /* 仓耳非白W03.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "仓耳非白W03.ttf"; sourceTree = "<group>"; };
+		3233A17B2D224D03005AC537 /* Min.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Min.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3233A17E2D224D03005AC537 /* MinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinApp.swift; sourceTree = "<group>"; };
+		3233A1802D224D03005AC537 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3233A1822D224D05005AC537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3233A1852D224D05005AC537 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3233A18D2D225178005AC537 /* AppName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppName.swift; sourceTree = "<group>"; };
+		3233A18F2D225184005AC537 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		3233A1942D2251F4005AC537 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		3233A1962D225208005AC537 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		3233A1992D225242005AC537 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		3233A19B2D22729C005AC537 /* URLSchemeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = URLSchemeData.json; sourceTree = "<group>"; };
+		3233A19F2D22756A005AC537 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		3233A1B02D224D03005AC538 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		326CC3D52E01518F0032697A /* TextAlignmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAlignmentModel.swift; sourceTree = "<group>"; };
+		32B018EB2F558400005457E1 /* MinEdgeFade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinEdgeFade.swift; sourceTree = "<group>"; };
+		32B018ED2F558400005457E2 /* AppStoreIconStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreIconStore.swift; sourceTree = "<group>"; };
+		32B018EF2F558400005457E3 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		32C26D3B2F7A106900D4911D /* WidgetFrameCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetFrameCalculator.swift; sourceTree = "<group>"; };
+		331C26C84A38E1166185B75D /* 草书(简入繁出).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "草书(简入繁出).ttf"; sourceTree = "<group>"; };
+		33D0F1077E04782F88E50839 /* Caveat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Caveat-Regular.ttf"; sourceTree = "<group>"; };
+		38891F268B04F6980767A0EC /* 中文像素字体-圆点.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "中文像素字体-圆点.otf"; sourceTree = "<group>"; };
+		3C1F371FC5D4DF18663C42D9 /* YuFanXinYu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YuFanXinYu-Medium.ttf"; sourceTree = "<group>"; };
+		3D5C98F3D3F5980D500193A6 /* Ouvrieres-affamees.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ouvrieres-affamees.ttf"; sourceTree = "<group>"; };
+		4046158F4F58A551421513DD /* 栗壳坚坚体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "栗壳坚坚体.ttf"; sourceTree = "<group>"; };
+		40DA7DA597CBB32D423D763B /* 今年也要加油鸭.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "今年也要加油鸭.ttf"; sourceTree = "<group>"; };
+		40F987D6EAA56D4F579D0AB0 /* poorhandwriting.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = poorhandwriting.ttf; sourceTree = "<group>"; };
+		42EF55D6B07C07AB823FE143 /* VictorMono-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VictorMono-ExtraLight.ttf"; sourceTree = "<group>"; };
+		4EF6AE74392ED9D209CF7DAF /* AppGroupStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroupStore.swift; sourceTree = "<group>"; };
+		5223B9AF1969D583ED817B82 /* YuFanXinYu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YuFanXinYu-Light.ttf"; sourceTree = "<group>"; };
+		545BED47115271880B489850 /* Rubik-Vinyl-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Vinyl-Regular.ttf"; sourceTree = "<group>"; };
+		6157F30891F62C4895257491 /* 中文像素字体-方点.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "中文像素字体-方点.otf"; sourceTree = "<group>"; };
+		621D7944646EFE7FEC2F898C /* TiejiliSC-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TiejiliSC-Regular.otf"; sourceTree = "<group>"; };
+		7041B0BA48B8B0F333F2B725 /* 云峰寒蝉体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "云峰寒蝉体.ttf"; sourceTree = "<group>"; };
+		7B3D6D33CA6438DC69688AD8 /* 千图小兔体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "千图小兔体.ttf"; sourceTree = "<group>"; };
+		7C953419D552DE0E3D439525 /* 精品点阵体_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "精品点阵体_Bold.ttf"; sourceTree = "<group>"; };
+		7DB21CB804DEBBFDBF95926B /* 小可奶酪体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "小可奶酪体.ttf"; sourceTree = "<group>"; };
+		80247C507BD64045F4AEA90B /* 新叶念体.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "新叶念体.otf"; sourceTree = "<group>"; };
+		838758FAE5A634A5CD9F2A86 /* 墨趣古风体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "墨趣古风体.ttf"; sourceTree = "<group>"; };
+		88B119FA6C14960A696E26DB /* MinNativeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinNativeSheet.swift; sourceTree = "<group>"; };
+		8B56D3F5243DC3511DF72700 /* 仓耳非白W01.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "仓耳非白W01.ttf"; sourceTree = "<group>"; };
+		92ED72BE865DC79375139B73 /* Caveat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Caveat-Bold.ttf"; sourceTree = "<group>"; };
+		948FE7A6BEB8CD88ABBE3C86 /* 鸿雷小纸条青春体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "鸿雷小纸条青春体.ttf"; sourceTree = "<group>"; };
+		97178C9D6BA0452C06BA2FAB /* VictorMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VictorMono-Medium.ttf"; sourceTree = "<group>"; };
+		9AE6039258222FAEAB30A140 /* 仓耳非白W05.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "仓耳非白W05.ttf"; sourceTree = "<group>"; };
+		9BDABE412306D2F2883A1447 /* 明达明达无锋体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "明达明达无锋体.ttf"; sourceTree = "<group>"; };
+		9F0B0DF7D93D1C533E673E5A /* ODRFontCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODRFontCatalog.swift; sourceTree = "<group>"; };
+		AA0000012F80000000000002 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		AA0000012F90000000000002 /* WebSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSheetView.swift; sourceTree = "<group>"; };
+		AA0000022F80000000000002 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
+		AA0000032F80000000000002 /* Products.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Products.storekit; sourceTree = "<group>"; };
+		ACF5F1378C592E8AFB6F1154 /* 阿朱泡泡体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "阿朱泡泡体.ttf"; sourceTree = "<group>"; };
+		B2000001F80000000000002 /* MinSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinSplashView.swift; sourceTree = "<group>"; };
+		BD8ADA9019BADCBD967DD8F7 /* MinSettingChrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinSettingChrome.swift; sourceTree = "<group>"; };
+		BEA84D8881F9CDD68BDC7792 /* 南构无恙行书.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "南构无恙行书.ttf"; sourceTree = "<group>"; };
+		BFF9C2769B98EA0689C12CFD /* 也字工厂小石头.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "也字工厂小石头.ttf"; sourceTree = "<group>"; };
+		C47FA57EA3900CC8DAA89257 /* WidgetStyledText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetStyledText.swift; sourceTree = "<group>"; };
+		C65B281AAAE332A0F5EBE247 /* 乡立方黑体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "乡立方黑体.ttf"; sourceTree = "<group>"; };
+		CFA68A91A06976B046DFA352 /* ODRFontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODRFontManager.swift; sourceTree = "<group>"; };
+		D931FB34CFBA10FCF2482C99 /* VictorMono-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VictorMono-Light.ttf"; sourceTree = "<group>"; };
+		DA3CC4470CC25A9A1AE576C2 /* 簡語生活體.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "簡語生活體.ttf"; sourceTree = "<group>"; };
+		DDE2F12791D46E1AEAFB58C5 /* 鼎猎西大体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "鼎猎西大体.ttf"; sourceTree = "<group>"; };
+		DF232CF9F0A3DB61F53632D7 /* Ouvrieres-soldates.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ouvrieres-soldates.ttf"; sourceTree = "<group>"; };
+		DFB94A1EACD56755F73D957A /* WallpaperGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperGuideView.swift; sourceTree = "<group>"; };
+		DFB94A1EACD56755F73D957C /* screenshot_tutorial.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = screenshot_tutorial.mp4; sourceTree = "<group>"; };
+		E07829A5E29FD2D2B4CA6DFA /* YuFanXinYu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YuFanXinYu-Bold.ttf"; sourceTree = "<group>"; };
+		E0A8E23F6EDF34CB6A975C3D /* 仓耳非白W02.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "仓耳非白W02.ttf"; sourceTree = "<group>"; };
+		E1F7A2C6BDC8DAF80E9014A5 /* AppGroupFontRegistrar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroupFontRegistrar.swift; sourceTree = "<group>"; };
+		E310CF0B2F5B564900F0345D /* FontSpacingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSpacingView.swift; sourceTree = "<group>"; };
+		E3252C3E2E9182850041C414 /* FontSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSetting.swift; sourceTree = "<group>"; };
+		E3252C412E9183350041C414 /* FontSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizeView.swift; sourceTree = "<group>"; };
+		E3252C432E9183650041C414 /* FontFamilyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontFamilyView.swift; sourceTree = "<group>"; };
+		E3252C452E9183820041C414 /* FontColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontColorView.swift; sourceTree = "<group>"; };
+		E3252C562E981EE90041C414 /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
+		E3252C592E981F3B0041C414 /* FontsPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsPickerView.swift; sourceTree = "<group>"; };
+		E342F50B2DC6802000F5CA39 /* CardDeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeckView.swift; sourceTree = "<group>"; };
+		E3438D322ED3000100DCD6D4 /* TopWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopWidgetView.swift; sourceTree = "<group>"; };
+		E3798C472D70C75000E1A5E9 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E3D2CE132D7C0024005A9D39 /* MinWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MinWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3D2CE142D7C0024005A9D39 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E3D2CE282D7C01A6005A9D39 /* MinWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MinWidgetExtension.entitlements; sourceTree = "<group>"; };
+		E3D5BB092DFB120500DCB281 /* TextAlignmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAlignmentView.swift; sourceTree = "<group>"; };
+		E3E3FC3E2EB129470012025A /* WidgetViewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetViewView.swift; sourceTree = "<group>"; };
+		E3E999BD2EC4DD8A001B0431 /* CustomWallpaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWallpaperView.swift; sourceTree = "<group>"; };
+		E3E999C22EC4EBFC001B0431 /* WidgetImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetImageManager.swift; sourceTree = "<group>"; };
+		E3EC6C532DF738370094EC01 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		E3F8CCB12D6A11A700304330 /* AppStoreSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreSearchViewModel.swift; sourceTree = "<group>"; };
+		E3F8CCB32D6A121200304330 /* AppStoreSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreSearchView.swift; sourceTree = "<group>"; };
+		E3F8CCB52D6A1F4200304330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E3F8CCB62D6A2C4400304330 /* URLSchemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSchemeView.swift; sourceTree = "<group>"; };
+		E5F4958C4E94069F710D38F4 /* 重庆山城棒棒体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "重庆山城棒棒体.ttf"; sourceTree = "<group>"; };
+		F0ECD7FD6D72C95709929CB2 /* 她屿山海.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "她屿山海.ttf"; sourceTree = "<group>"; };
+		F2A87A92AF908636C212C9FB /* 白路俏丽手写体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "白路俏丽手写体.ttf"; sourceTree = "<group>"; };
+		F533DC4273AF7BBC2812A347 /* fusion-pixel-10px-proportional.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fusion-pixel-10px-proportional.otf"; sourceTree = "<group>"; };
+		F954B509BD9BE23A2DE4123B /* VictorMono-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VictorMono-ThinItalic.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		326D146E2D7EF0980087B582 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E3D2CE122D7C0024005A9D39 /* MinWidgetExtension */;
+		};
+		E3D2CE2C2D7C5298005A9D39 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				MinWidget.swift,
+				WidgetModel.swift,
+			);
+			target = 3233A17A2D224D03005AC537 /* Min */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E3D2CE172D7C0024005A9D39 /* MinWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (E3D2CE2C2D7C5298005A9D39 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 326D146E2D7EF0980087B582 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = MinWidget; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3233A1782D224D03005AC537 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B018E42F55831C005457D2 /* BigUIPaging in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3D2CE102D7C0024005A9D39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3D2CE162D7C0024005A9D39 /* SwiftUI.framework in Frameworks */,
+				E3D2CE152D7C0024005A9D39 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3233A1722D224D03005AC537 = {
+			isa = PBXGroup;
+			children = (
+				32D9E9EF2F601CCA00638BBE /* Resources */,
+				E3D2CE282D7C01A6005A9D39 /* MinWidgetExtension.entitlements */,
+				3233A17D2D224D03005AC537 /* Min */,
+				E3D2CE172D7C0024005A9D39 /* MinWidget */,
+				E3798C442D70C75000E1A5E9 /* Frameworks */,
+				3233A17C2D224D03005AC537 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3233A17C2D224D03005AC537 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3233A17B2D224D03005AC537 /* Min.app */,
+				E3D2CE132D7C0024005A9D39 /* MinWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3233A17D2D224D03005AC537 /* Min */ = {
+			isa = PBXGroup;
+			children = (
+				E3F8CCB52D6A1F4200304330 /* Info.plist */,
+				32B018EF2F558400005457E3 /* PrivacyInfo.xcprivacy */,
+				3233A17E2D224D03005AC537 /* MinApp.swift */,
+				3233A1802D224D03005AC537 /* ContentView.swift */,
+				3233A1B02D224D03005AC538 /* MainTabView.swift */,
+				AA0000032F80000000000002 /* Products.storekit */,
+				3233A18C2D22514E005AC537 /* Model */,
+				3233A1912D2251B3005AC537 /* View */,
+				3233A1982D22521F005AC537 /* ViewModel */,
+				3233A19B2D22729C005AC537 /* URLSchemeData.json */,
+				3233A1822D224D05005AC537 /* Assets.xcassets */,
+				3233A1842D224D05005AC537 /* Preview Content */,
+				3233A19F2D22756A005AC537 /* Launch Screen.storyboard */,
+			);
+			path = Min;
+			sourceTree = "<group>";
+		};
+		3233A1842D224D05005AC537 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3233A1852D224D05005AC537 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3233A18C2D22514E005AC537 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3233A18D2D225178005AC537 /* AppName.swift */,
+				3233A18F2D225184005AC537 /* Item.swift */,
+				E3252C3E2E9182850041C414 /* FontSetting.swift */,
+				E3252C562E981EE90041C414 /* CustomFonts.swift */,
+				4EF6AE74392ED9D209CF7DAF /* AppGroupStore.swift */,
+				C47FA57EA3900CC8DAA89257 /* WidgetStyledText.swift */,
+				E1F7A2C6BDC8DAF80E9014A5 /* AppGroupFontRegistrar.swift */,
+				9F0B0DF7D93D1C533E673E5A /* ODRFontCatalog.swift */,
+				CFA68A91A06976B046DFA352 /* ODRFontManager.swift */,
+				32C26D3B2F7A106900D4911D /* WidgetFrameCalculator.swift */,
+				E3E999C22EC4EBFC001B0431 /* WidgetImageManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3233A1912D2251B3005AC537 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2000001F80000000000002 /* MinSplashView.swift */,
+				3233A1942D2251F4005AC537 /* SearchView.swift */,
+				32B018EB2F558400005457E1 /* MinEdgeFade.swift */,
+				E342F50B2DC6802000F5CA39 /* CardDeckView.swift */,
+				E3F8CCB32D6A121200304330 /* AppStoreSearchView.swift */,
+				E3F8CCB62D6A2C4400304330 /* URLSchemeView.swift */,
+				3233A1962D225208005AC537 /* TextFieldView.swift */,
+				AA0000012F90000000000002 /* WebSheetView.swift */,
+				AA0000012F80000000000002 /* PaywallView.swift */,
+				E3D5BB082DFB119500DCB281 /* SettingGroupView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3233A1982D22521F005AC537 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				326CC3D52E01518F0032697A /* TextAlignmentModel.swift */,
+				3233A1992D225242005AC537 /* SearchViewModel.swift */,
+				32B018ED2F558400005457E2 /* AppStoreIconStore.swift */,
+				E3F8CCB12D6A11A700304330 /* AppStoreSearchViewModel.swift */,
+				AA0000022F80000000000002 /* SubscriptionManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		32D9E9EE2F601CA800638BBE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1EA6E591BC3BF5F17C7D7F16 /* Aa厚底黑.ttf */,
+				92ED72BE865DC79375139B73 /* Caveat-Bold.ttf */,
+				33D0F1077E04782F88E50839 /* Caveat-Regular.ttf */,
+				3D5C98F3D3F5980D500193A6 /* Ouvrieres-affamees.ttf */,
+				176B12982E6FB3261796FDA3 /* Ouvrieres-rassasiees.ttf */,
+				DF232CF9F0A3DB61F53632D7 /* Ouvrieres-soldates.ttf */,
+				2363E8F9FE343C97DE5CE18E /* Rubik-Storm-Regular.ttf */,
+				545BED47115271880B489850 /* Rubik-Vinyl-Regular.ttf */,
+				2F47BB972E2D43E406E9010E /* Rubik-WetPaint-Regular.ttf */,
+				621D7944646EFE7FEC2F898C /* TiejiliSC-Regular.otf */,
+				1AA9644D50117A49E0B8EF31 /* VictorMono-Bold.ttf */,
+				42EF55D6B07C07AB823FE143 /* VictorMono-ExtraLight.ttf */,
+				D931FB34CFBA10FCF2482C99 /* VictorMono-Light.ttf */,
+				97178C9D6BA0452C06BA2FAB /* VictorMono-Medium.ttf */,
+				27D0727AF300D1F03206C729 /* VictorMono-Regular.ttf */,
+				F954B509BD9BE23A2DE4123B /* VictorMono-ThinItalic.ttf */,
+				E07829A5E29FD2D2B4CA6DFA /* YuFanXinYu-Bold.ttf */,
+				5223B9AF1969D583ED817B82 /* YuFanXinYu-Light.ttf */,
+				3C1F371FC5D4DF18663C42D9 /* YuFanXinYu-Medium.ttf */,
+				020906E5D348814863A2684C /* YuFanXinYu-Regular.ttf */,
+				F533DC4273AF7BBC2812A347 /* fusion-pixel-10px-proportional.otf */,
+				40F987D6EAA56D4F579D0AB0 /* poorhandwriting.ttf */,
+				38891F268B04F6980767A0EC /* 中文像素字体-圆点.otf */,
+				6157F30891F62C4895257491 /* 中文像素字体-方点.otf */,
+				BFF9C2769B98EA0689C12CFD /* 也字工厂小石头.ttf */,
+				C65B281AAAE332A0F5EBE247 /* 乡立方黑体.ttf */,
+				7041B0BA48B8B0F333F2B725 /* 云峰寒蝉体.ttf */,
+				40DA7DA597CBB32D423D763B /* 今年也要加油鸭.ttf */,
+				8B56D3F5243DC3511DF72700 /* 仓耳非白W01.ttf */,
+				E0A8E23F6EDF34CB6A975C3D /* 仓耳非白W02.ttf */,
+				318F5BBA5D96CABA9C786971 /* 仓耳非白W03.ttf */,
+				295EC4F565A3680A438AFEFC /* 仓耳非白W04.ttf */,
+				9AE6039258222FAEAB30A140 /* 仓耳非白W05.ttf */,
+				7B3D6D33CA6438DC69688AD8 /* 千图小兔体.ttf */,
+				BEA84D8881F9CDD68BDC7792 /* 南构无恙行书.ttf */,
+				1602C32E18CA882263FD8287 /* 南西初夏宋-简繁.ttf */,
+				2F5EB4CBBB07DF78EC6D7586 /* 呆萌手写体.otf */,
+				838758FAE5A634A5CD9F2A86 /* 墨趣古风体.ttf */,
+				F0ECD7FD6D72C95709929CB2 /* 她屿山海.ttf */,
+				2B14E43B77F06F12EBD7B57C /* 字制区喜脉喜欢体.ttf */,
+				7DB21CB804DEBBFDBF95926B /* 小可奶酪体.ttf */,
+				3165C08984EEA63340F541C3 /* 快看世界体.ttf */,
+				126726783ACDCE93A1999A0E /* 抖音美好体.otf */,
+				1F571CBD2AA49189A3BBCC4B /* 文心喜乐体.ttf */,
+				80247C507BD64045F4AEA90B /* 新叶念体.otf */,
+				9BDABE412306D2F2883A1447 /* 明达明达无锋体.ttf */,
+				4046158F4F58A551421513DD /* 栗壳坚坚体.ttf */,
+				0BA3E08A554BE8D3BCDDDF41 /* 猫啃珠圆体 MaokenZhuyuanTi.ttf */,
+				F2A87A92AF908636C212C9FB /* 白路俏丽手写体.ttf */,
+				DA3CC4470CC25A9A1AE576C2 /* 簡語生活體.ttf */,
+				28AD3BB87F596DC5404E5DCB /* 精品点阵体.ttf */,
+				7C953419D552DE0E3D439525 /* 精品点阵体_Bold.ttf */,
+				331C26C84A38E1166185B75D /* 草书(简入繁出).ttf */,
+				10DA89292ABFEF4EB2E101CF /* 荷塘月色手写体+Regular.ttf */,
+				E5F4958C4E94069F710D38F4 /* 重庆山城棒棒体.ttf */,
+				ACF5F1378C592E8AFB6F1154 /* 阿朱泡泡体.ttf */,
+				948FE7A6BEB8CD88ABBE3C86 /* 鸿雷小纸条青春体.ttf */,
+				DDE2F12791D46E1AEAFB58C5 /* 鼎猎西大体.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		32D9E9EF2F601CCA00638BBE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32D9E9EE2F601CA800638BBE /* Fonts */,
+				DFB94A1EACD56755F73D957C /* screenshot_tutorial.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E3798C442D70C75000E1A5E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3798C472D70C75000E1A5E9 /* SwiftUI.framework */,
+				E3D2CE142D7C0024005A9D39 /* WidgetKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3D5BB082DFB119500DCB281 /* SettingGroupView */ = {
+			isa = PBXGroup;
+			children = (
+				E3EC6C532DF738370094EC01 /* SettingView.swift */,
+				E3E3FC3E2EB129470012025A /* WidgetViewView.swift */,
+				E3D5BB092DFB120500DCB281 /* TextAlignmentView.swift */,
+				E3252C432E9183650041C414 /* FontFamilyView.swift */,
+				88B119FA6C14960A696E26DB /* MinNativeSheet.swift */,
+				BD8ADA9019BADCBD967DD8F7 /* MinSettingChrome.swift */,
+				E3252C412E9183350041C414 /* FontSizeView.swift */,
+				E310CF0B2F5B564900F0345D /* FontSpacingView.swift */,
+				E3252C452E9183820041C414 /* FontColorView.swift */,
+				E3438D322ED3000100DCD6D4 /* TopWidgetView.swift */,
+				E3E999BD2EC4DD8A001B0431 /* CustomWallpaperView.swift */,
+				DFB94A1EACD56755F73D957A /* WallpaperGuideView.swift */,
+				E3252C592E981F3B0041C414 /* FontsPickerView.swift */,
+			);
+			path = SettingGroupView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3233A17A2D224D03005AC537 /* Min */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3233A1892D224D05005AC537 /* Build configuration list for PBXNativeTarget "Min" */;
+			buildPhases = (
+				3233A1772D224D03005AC537 /* Sources */,
+				3233A1782D224D03005AC537 /* Frameworks */,
+				3233A1792D224D03005AC537 /* Resources */,
+				E3798C582D70C75200E1A5E9 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3D2CE222D7C0026005A9D39 /* PBXTargetDependency */,
+			);
+			name = Min;
+			packageProductDependencies = (
+				32B018E32F55831C005457D2 /* BigUIPaging */,
+			);
+			productName = Min;
+			productReference = 3233A17B2D224D03005AC537 /* Min.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E3D2CE122D7C0024005A9D39 /* MinWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3D2CE272D7C0026005A9D39 /* Build configuration list for PBXNativeTarget "MinWidgetExtension" */;
+			buildPhases = (
+				E3D2CE0F2D7C0024005A9D39 /* Sources */,
+				E3D2CE102D7C0024005A9D39 /* Frameworks */,
+				E3D2CE112D7C0024005A9D39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E3D2CE172D7C0024005A9D39 /* MinWidget */,
+			);
+			name = MinWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = MinWidgetExtension;
+			productReference = E3D2CE132D7C0024005A9D39 /* MinWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3233A1732D224D03005AC537 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					Fonts.AZhuPaoPao,
+					Fonts.AaHouDiHei,
+					Fonts.BaiLuQiaoLi,
+					Fonts.BoutiqueBitmap,
+					Fonts.CNPixel,
+					Fonts.CangErFeiBai,
+					Fonts.CaoShu,
+					Fonts.Caveat,
+					Fonts.ChongQingBangBang,
+					Fonts.DaiMeng,
+					Fonts.DingLieXiDa,
+					Fonts.DouYinMeiHao,
+					Fonts.FusionPixel10Prop,
+					Fonts.HeTangYueSe,
+					Fonts.HongLei,
+					Fonts.JiaYouYa,
+					Fonts.JianYuShengHuo,
+					Fonts.KuaiKan,
+					Fonts.LiKeJianJian,
+					Fonts.MaoKenZhuyuan,
+					Fonts.MingDaWuFeng,
+					Fonts.MoQuGuFeng,
+					Fonts.NanGouWuYang,
+					Fonts.NanXiChuXia,
+					Fonts.Ouvrieres,
+					Fonts.PoorHandwriting,
+					Fonts.QianTuXiaoTu,
+					Fonts.Rubik,
+					Fonts.TaYuShanHai,
+					Fonts.Tiejili,
+					Fonts.VictorMono,
+					Fonts.WenxinXile,
+					Fonts.XiangLiFang,
+					Fonts.XiaoKeNaiLao,
+					Fonts.XinYeNian,
+					Fonts.YeZiXiaoShiTou,
+					Fonts.YuFanXinYu,
+					Fonts.YunFengHanChan,
+					Fonts.ZiZhiQuXiMai,
+				);
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					3233A17A2D224D03005AC537 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					E3D2CE122D7C0024005A9D39 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 3233A1762D224D03005AC537 /* Build configuration list for PBXProject "Min" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3233A1722D224D03005AC537;
+			packageReferences = (
+				32B018E12F55816F005457D2 /* XCLocalSwiftPackageReference "../Package/BigUIPaging-master" */,
+			);
+			productRefGroup = 3233A17C2D224D03005AC537 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3233A17A2D224D03005AC537 /* Min */,
+				E3D2CE122D7C0024005A9D39 /* MinWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3233A1792D224D03005AC537 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3233A19C2D22729C005AC537 /* URLSchemeData.json in Resources */,
+				3233A1862D224D05005AC537 /* Preview Assets.xcassets in Resources */,
+				3233A1A02D22756A005AC537 /* Launch Screen.storyboard in Resources */,
+				3233A1832D224D05005AC537 /* Assets.xcassets in Resources */,
+				32B018EE2F558400005457E3 /* PrivacyInfo.xcprivacy in Resources */,
+				DFB94A1EACD56755F73D957D /* screenshot_tutorial.mp4 in Resources */,
+				61B6AF4C3FAC05EFC4230C14 /* Aa厚底黑.ttf in Resources */,
+				7461277251E4318E0774BF68 /* Caveat-Bold.ttf in Resources */,
+				E055E1EC7186B02070513FFD /* Caveat-Regular.ttf in Resources */,
+				F20284A9CC363C86BAD9CBC7 /* Ouvrieres-affamees.ttf in Resources */,
+				4060C536DCF05CDF2467FF22 /* Ouvrieres-rassasiees.ttf in Resources */,
+				8EAD54F3529F0A0A171856C0 /* Ouvrieres-soldates.ttf in Resources */,
+				C0346929ADBED6B7C11A3E16 /* Rubik-Storm-Regular.ttf in Resources */,
+				BF7EE80DA2899B20442E4A98 /* Rubik-Vinyl-Regular.ttf in Resources */,
+				983E45CB1681CDF13CEC9BB1 /* Rubik-WetPaint-Regular.ttf in Resources */,
+				CE9EAD65080889C3D7F5FFFF /* TiejiliSC-Regular.otf in Resources */,
+				89AE658B227C77BCE7D03CA4 /* VictorMono-Bold.ttf in Resources */,
+				919F885305A764B096D15BC6 /* VictorMono-ExtraLight.ttf in Resources */,
+				C1CBA29510D8C123B783E657 /* VictorMono-Light.ttf in Resources */,
+				73D70B19BF565A8380AA2204 /* VictorMono-Medium.ttf in Resources */,
+				F260F8BE4A8BC3A591707F4E /* VictorMono-Regular.ttf in Resources */,
+				047E9260D0DE8A541CD0C06C /* VictorMono-ThinItalic.ttf in Resources */,
+				2B9CB56CC8D15C4FA5DF1105 /* YuFanXinYu-Bold.ttf in Resources */,
+				7E6B8C44C187D6BCFF4BFDA6 /* YuFanXinYu-Light.ttf in Resources */,
+				B42F963562914583FA8E564D /* YuFanXinYu-Medium.ttf in Resources */,
+				837F0FEE78A4940AC3485B72 /* YuFanXinYu-Regular.ttf in Resources */,
+				E5AA2B866BC37E011043AA6F /* fusion-pixel-10px-proportional.otf in Resources */,
+				DDF90604A2D55465F535F5DA /* poorhandwriting.ttf in Resources */,
+				861958978E308E1286FD3D5B /* 中文像素字体-圆点.otf in Resources */,
+				7C641A31C18043D18B2CDFEC /* 中文像素字体-方点.otf in Resources */,
+				9C99043B6AAAE7D7B3F6FFF2 /* 也字工厂小石头.ttf in Resources */,
+				F4155DF09979966A8D438E19 /* 乡立方黑体.ttf in Resources */,
+				8E4562D488C27856335D3885 /* 云峰寒蝉体.ttf in Resources */,
+				664097AF2F9EEE646B50C229 /* 今年也要加油鸭.ttf in Resources */,
+				C48BE9FDB1718E51B5EA2AF6 /* 仓耳非白W01.ttf in Resources */,
+				198A33BAD304E7ADEE32558D /* 仓耳非白W02.ttf in Resources */,
+				2D7414B9F33DAE510D5135EA /* 仓耳非白W03.ttf in Resources */,
+				12CCDDC1445191606D362AC2 /* 仓耳非白W04.ttf in Resources */,
+				EE2658D27DB6090C7E35D2F2 /* 仓耳非白W05.ttf in Resources */,
+				D7614F51861C704D4AEEC05C /* 千图小兔体.ttf in Resources */,
+				50D2EB8C4D26B0AB0AB5C206 /* 南构无恙行书.ttf in Resources */,
+				674989EAE670B3E3A9189102 /* 南西初夏宋-简繁.ttf in Resources */,
+				0B32AE2E285F19C72FAC7D9E /* 呆萌手写体.otf in Resources */,
+				347EB56F90495C634DEC54D2 /* 墨趣古风体.ttf in Resources */,
+				D4BF24C7E7857476B7E5C3C9 /* 她屿山海.ttf in Resources */,
+				2B6F607111BA1B19997172CB /* 字制区喜脉喜欢体.ttf in Resources */,
+				9C1C71F3F89115E72137C6FD /* 小可奶酪体.ttf in Resources */,
+				EEE36F78B36F0D8B95161B09 /* 快看世界体.ttf in Resources */,
+				F9A6548DD9D6BBAA4D9E41F7 /* 抖音美好体.otf in Resources */,
+				C5E7E5927EEB14D5BDF05CE2 /* 文心喜乐体.ttf in Resources */,
+				2C4E0D091BB30F14286F2835 /* 新叶念体.otf in Resources */,
+				E8BB6B7301F522BB41B8A83B /* 明达明达无锋体.ttf in Resources */,
+				C62579AF91A688F928012484 /* 栗壳坚坚体.ttf in Resources */,
+				D80B7EC190149ABD066C200E /* 猫啃珠圆体 MaokenZhuyuanTi.ttf in Resources */,
+				5497900B8809C403B99D45B8 /* 白路俏丽手写体.ttf in Resources */,
+				DC936BA329C8D277EEFDD4AA /* 簡語生活體.ttf in Resources */,
+				8051F25D6CB01393B79A0932 /* 精品点阵体.ttf in Resources */,
+				606FEC636A12EB826BBE3B27 /* 精品点阵体_Bold.ttf in Resources */,
+				4BF1A29CC0768433A6944160 /* 草书(简入繁出).ttf in Resources */,
+				8F54134D9DB439F3DA7B176D /* 荷塘月色手写体+Regular.ttf in Resources */,
+				6A6DB651E2DAB8B95922B904 /* 重庆山城棒棒体.ttf in Resources */,
+				E921F3222EDB67DF9B22DF4E /* 阿朱泡泡体.ttf in Resources */,
+				97D3B15FEDC2171E9F7F2B9F /* 鸿雷小纸条青春体.ttf in Resources */,
+				C294AC83682899DC12D7078F /* 鼎猎西大体.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3D2CE112D7C0024005A9D39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3233A1772D224D03005AC537 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E342F50C2DC6802F00F5CA39 /* CardDeckView.swift in Sources */,
+				E3D5BB0A2DFB120500DCB281 /* TextAlignmentView.swift in Sources */,
+				3233A1902D225184005AC537 /* Item.swift in Sources */,
+				E3252C462E9183870041C414 /* FontColorView.swift in Sources */,
+				3233A1972D225208005AC537 /* TextFieldView.swift in Sources */,
+				E3EC6C542DF738370094EC01 /* SettingView.swift in Sources */,
+				E3252C5A2E981F490041C414 /* FontsPickerView.swift in Sources */,
+				32C26D3D2F7A106900D4911D /* WidgetFrameCalculator.swift in Sources */,
+				E3F8CCB72D6A2C4F00304330 /* URLSchemeView.swift in Sources */,
+				E3E999C32EC4EC03001B0431 /* WidgetImageManager.swift in Sources */,
+				E3F8CCB42D6A121200304330 /* AppStoreSearchView.swift in Sources */,
+				E3E3FC3F2EB129730012025A /* WidgetViewView.swift in Sources */,
+				3233A19A2D225242005AC537 /* SearchViewModel.swift in Sources */,
+				E310CF0C2F5B564900F0345D /* FontSpacingView.swift in Sources */,
+				E3F8CCB22D6A11AB00304330 /* AppStoreSearchViewModel.swift in Sources */,
+				E3252C442E9183710041C414 /* FontFamilyView.swift in Sources */,
+				0909E3B5291DD4369F9A30CE /* MinSettingChrome.swift in Sources */,
+				D68798C5E4482C2ADD764615 /* MinNativeSheet.swift in Sources */,
+				326CC3D62E0151910032697A /* TextAlignmentModel.swift in Sources */,
+				3233A1812D224D03005AC537 /* ContentView.swift in Sources */,
+				3233A1B12D224D03005AC538 /* MainTabView.swift in Sources */,
+				E3252C3F2E9182C60041C414 /* FontSetting.swift in Sources */,
+				E3E999BE2EC4DD8D001B0431 /* CustomWallpaperView.swift in Sources */,
+				E3252C422E9183420041C414 /* FontSizeView.swift in Sources */,
+				3233A18E2D225178005AC537 /* AppName.swift in Sources */,
+				E3252C572E981F030041C414 /* CustomFonts.swift in Sources */,
+				4170910F3E1F4041C9E51361 /* AppGroupStore.swift in Sources */,
+				82024A29513971BA0DCA461B /* WidgetStyledText.swift in Sources */,
+				583269CB665727AA3FA79A46 /* AppGroupFontRegistrar.swift in Sources */,
+				E6E6705853392994C6F7F0EC /* ODRFontCatalog.swift in Sources */,
+				CF55369C0CE1D739034B1D82 /* ODRFontManager.swift in Sources */,
+				3233A17F2D224D03005AC537 /* MinApp.swift in Sources */,
+				3233A1952D2251F4005AC537 /* SearchView.swift in Sources */,
+				32B018EA2F558400005457E1 /* MinEdgeFade.swift in Sources */,
+				32B018EC2F558400005457E2 /* AppStoreIconStore.swift in Sources */,
+				E3438D332ED3000100DCD6D4 /* TopWidgetView.swift in Sources */,
+				AA0000012F80000000000001 /* PaywallView.swift in Sources */,
+				AA0000012F90000000000001 /* WebSheetView.swift in Sources */,
+				B2000001F80000000000001 /* MinSplashView.swift in Sources */,
+				AA0000022F80000000000001 /* SubscriptionManager.swift in Sources */,
+				DFB94A1EACD56755F73D957B /* WallpaperGuideView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3D2CE0F2D7C0024005A9D39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				326CC3D72E0152FD0032697A /* TextAlignmentModel.swift in Sources */,
+				32C26D3C2F7A106900D4911D /* WidgetFrameCalculator.swift in Sources */,
+				E3D2CE2D2D7C52E0005A9D39 /* Item.swift in Sources */,
+				E3E999D52EC4ED1F001B0431 /* WidgetImageManager.swift in Sources */,
+				E3252C582E981F030041C414 /* CustomFonts.swift in Sources */,
+				F97DC03ACF1A3B60774203F2 /* AppGroupStore.swift in Sources */,
+				2A8BAA2B3E0E7B5AEA90071B /* WidgetStyledText.swift in Sources */,
+				4302F5074E83122844E3B376 /* AppGroupFontRegistrar.swift in Sources */,
+				25EE86865C6D3CA57BAE6DB0 /* ODRFontCatalog.swift in Sources */,
+				E3252C402E9182C60041C414 /* FontSetting.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3D2CE222D7C0026005A9D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3D2CE122D7C0024005A9D39 /* MinWidgetExtension */;
+			targetProxy = E3D2CE212D7C0026005A9D39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3233A1872D224D05005AC537 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9LV879GB7U;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3233A1882D224D05005AC537 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9LV879GB7U;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3233A18A2D224D05005AC537 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Min/Min.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Min/Preview Content\"";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				ENABLE_ON_DEMAND_RESOURCES = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Min/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Denghao.Min;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3233A18B2D224D05005AC537 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Min/Min.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Min/Preview Content\"";
+				ENABLE_ON_DEMAND_RESOURCES = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Min/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Denghao.Min;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E3D2CE242D7C0026005A9D39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MinWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MinWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Min;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Denghao.Min.MinWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E3D2CE252D7C0026005A9D39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MinWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MinWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Min;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Denghao.Min.MinWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3233A1762D224D03005AC537 /* Build configuration list for PBXProject "Min" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3233A1872D224D05005AC537 /* Debug */,
+				3233A1882D224D05005AC537 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3233A1892D224D05005AC537 /* Build configuration list for PBXNativeTarget "Min" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3233A18A2D224D05005AC537 /* Debug */,
+				3233A18B2D224D05005AC537 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3D2CE272D7C0026005A9D39 /* Build configuration list for PBXNativeTarget "MinWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3D2CE242D7C0026005A9D39 /* Debug */,
+				E3D2CE252D7C0026005A9D39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		32B018E12F55816F005457D2 /* XCLocalSwiftPackageReference "../Package/BigUIPaging-master" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../Package/BigUIPaging-master";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		32B018E32F55831C005457D2 /* BigUIPaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32B018E12F55816F005457D2 /* XCLocalSwiftPackageReference "../Package/BigUIPaging-master" */;
+			productName = BigUIPaging;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3233A1732D224D03005AC537 /* Project object */;
+}
