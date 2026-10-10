@@ -7,7 +7,16 @@
   <img src="https://img.shields.io/badge/Swift-5.9-orange" alt="Swift 5.9">
   <img src="https://img.shields.io/badge/SwiftUI-%E2%9C%93-blue" alt="SwiftUI">
   <img src="https://img.shields.io/badge/license-MIT-green" alt="MIT License">
+  <a href="https://apps.apple.com/cn/app/min-极简桌面小组件/id6795857001"><img src="https://img.shields.io/badge/App%20Store-%E5%B7%B2%E4%B8%8A%E6%9E%B6%E5%9B%BD%E5%8C%BA-0D96F6?logo=apple" alt="Download on the App Store"></a>
 </p>
+
+## 📲 下载
+
+**App Store（中国大陆区）**：
+
+👉 [Min - 极简桌面小组件](https://apps.apple.com/cn/app/min-极简桌面小组件/id6795857001)
+
+> 源码开源，欢迎 Star / Fork；你也可以直接从 App Store 下载体验完整功能。
 
 ## ✨ 功能特性
 
