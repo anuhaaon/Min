@@ -1,4 +1,9 @@
+# macOS
 .DS_Store
+*.swp
+*~
+
+# Xcode
 xcuserdata/
 *.xcuserstate
 DerivedData/
@@ -8,5 +13,27 @@ build/
 *.ipa
 *.dSYM.zip
 *.dSYM
+*.xcresult
+
+# Swift Package Manager
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.build/
+Packages/
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Secrets & local config
 .netrc
+*.xcconfig.local
+GoogleService-Info.plist
+.env
