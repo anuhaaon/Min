@@ -2,7 +2,7 @@
 //  SubscriptionManager.swift
 //  Min
 //
-//  StoreKit 2 订阅：无自建账号，权益跟 Apple ID。
+//  StoreKit 2：月/年订阅 + 终身买断；无自建账号，权益跟 Apple ID。
 //  本地用 Products.storekit 测试；上架后在 App Store Connect 建同 ID 产品即可。
 //
 
@@ -16,7 +16,8 @@ final class SubscriptionManager: ObservableObject {
     enum ProductID {
         static let monthly = "Denghao.Min.pro.monthly"
         static let annual = "Denghao.Min.pro.annual"
-        static let all: [String] = [monthly, annual]
+        static let lifetime = "Denghao.Min.pro.lifetime"
+        static let all: [String] = [monthly, annual, lifetime]
     }
 
     /// 与 Paywall 一致：免费 1 张卡片，Pro 最多 4 张
@@ -112,7 +113,7 @@ final class SubscriptionManager: ObservableObject {
             try await AppStore.sync()
             await updateEntitlements()
             if !isPro {
-                errorMessage = "未找到可恢复的订阅"
+                errorMessage = "未找到可恢复的购买"
             }
         } catch {
             errorMessage = "恢复失败：\(error.localizedDescription)"

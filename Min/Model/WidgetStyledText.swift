@@ -124,14 +124,11 @@ struct WidgetStyledText: View {
 
     @ViewBuilder
     private func renderedImageView(_ img: UIImage) -> some View {
+        // maxWidth 只用于绘制时截断，视图保持文字固有宽度，
+        // 以便外层用 frame(alignment:) 做左 / 中 / 右对齐。
         Image(uiImage: img)
             .interpolation(.high)
-            .frame(
-                width: maxWidth ?? img.size.width,
-                height: size * 1.35,
-                alignment: .leading
-            )
-            .clipped()
+            .frame(width: img.size.width, height: size * 1.35)
             .accessibilityLabel(text)
     }
 

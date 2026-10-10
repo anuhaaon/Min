@@ -12,7 +12,7 @@ struct PaywallView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.openURL) private var openURL
     @EnvironmentObject private var subscription: SubscriptionManager
-    @State private var selectedPlan: Plan = .annual
+    @State private var selectedPlan: Plan = .monthly
     @State private var isPurchasing = false
     @State private var appear = false
 
@@ -22,11 +22,13 @@ struct PaywallView: View {
     enum Plan: String {
         case monthly
         case annual
+        case lifetime
 
         var productID: String {
             switch self {
             case .monthly: return SubscriptionManager.ProductID.monthly
             case .annual: return SubscriptionManager.ProductID.annual
+            case .lifetime: return SubscriptionManager.ProductID.lifetime
             }
         }
     }
@@ -80,6 +82,9 @@ struct PaywallView: View {
 
                         purchaseButton
                             .padding(.top, 20)
+
+                        restoreButton
+                            .padding(.top, 12)
 
                         legalFooter
                             .padding(.top, 22)
@@ -311,30 +316,35 @@ struct PaywallView: View {
     // MARK: - Pricing
 
     private var pricingSection: some View {
-        HStack(alignment: .top, spacing: 10) {
-            VStack(spacing: 10) {
+        VStack(spacing: 10) {
+            HStack(alignment: .top, spacing: 8) {
                 planCard(
                     plan: .monthly,
                     title: "月度",
-                    price: displayPrice(for: .monthly, fallback: "¥12"),
+                    price: displayPrice(for: .monthly, fallback: "¥6"),
                     subtitle: "按月续订",
                     badge: nil
                 )
-                legalLink("隐私政策", url: privacyPolicyURL, alignment: .leading)
-            }
-            .frame(maxWidth: .infinity)
-
-            VStack(spacing: 10) {
                 planCard(
                     plan: .annual,
                     title: "年度",
-                    price: displayPrice(for: .annual, fallback: "¥108"),
-                    subtitle: "约 ¥9 / 月",
+                    price: displayPrice(for: .annual, fallback: "¥48"),
+                    subtitle: "约 ¥4 / 月",
                     badge: "更划算"
                 )
+                planCard(
+                    plan: .lifetime,
+                    title: "永久",
+                    price: displayPrice(for: .lifetime, fallback: "¥98"),
+                    subtitle: "一次买断",
+                    badge: "永久"
+                )
+            }
+
+            HStack {
+                legalLink("隐私政策", url: privacyPolicyURL, alignment: .leading)
                 legalLink("用户协议", url: termsOfServiceURL, alignment: .trailing)
             }
-            .frame(maxWidth: .infinity)
         }
     }
 
@@ -369,17 +379,18 @@ struct PaywallView: View {
             HapticFeedbackHelper.shared.selection()
         } label: {
             VStack(spacing: 8) {
-                HStack {
+                HStack(spacing: 4) {
                     Text(title)
-                        .font(.system(size: 13, weight: .medium))
+                        .font(.system(size: 12, weight: .medium))
                         .foregroundStyle(.white.opacity(0.55))
-                    Spacer()
+                    Spacer(minLength: 0)
                     if let badge {
                         Text(badge)
-                            .font(.system(size: 10, weight: .bold))
+                            .font(.system(size: 9, weight: .bold))
                             .foregroundStyle(Color(red: 0.12, green: 0.11, blue: 0.10))
-                            .padding(.horizontal, 7)
-                            .padding(.vertical, 3)
+                            .padding(.horizontal, 5)
+                            .padding(.vertical, 2)
+                            .lineLimit(1)
                             .background(
                                 Capsule().fill(Color(red: 0.95, green: 0.92, blue: 0.86))
                             )
@@ -387,16 +398,20 @@ struct PaywallView: View {
                 }
 
                 Text(price)
-                    .font(.system(size: 28, weight: .bold))
+                    .font(.system(size: 22, weight: .bold))
                     .foregroundStyle(.white)
+                    .minimumScaleFactor(0.75)
+                    .lineLimit(1)
                     .frame(maxWidth: .infinity, alignment: .leading)
 
                 Text(subtitle)
-                    .font(.system(size: 12, weight: .medium))
+                    .font(.system(size: 11, weight: .medium))
                     .foregroundStyle(.white.opacity(0.38))
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.8)
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
-            .padding(16)
+            .padding(12)
             .frame(maxWidth: .infinity, minHeight: 118, alignment: .top)
             .background(
                 RoundedRectangle(cornerRadius: 18, style: .continuous)
@@ -413,15 +428,24 @@ struct PaywallView: View {
             )
         }
         .buttonStyle(PlainButtonStyle())
+        .frame(maxWidth: .infinity)
     }
 
     // MARK: - Purchase
+
+    private var purchaseButtonTitle: String {
+        switch selectedPlan {
+        case .monthly: return "开通月度 Pro"
+        case .annual: return "开通年度 Pro"
+        case .lifetime: return "开通永久 Pro"
+        }
+    }
 
     private var purchaseButton: some View {
         Button {
             Task { await purchaseSelected() }
         } label: {
-            Text(selectedPlan == .annual ? "开通年度 Pro" : "开通月度 Pro")
+            Text(purchaseButtonTitle)
                 .font(.system(size: 17, weight: .semibold))
                 .foregroundStyle(.black)
                 .frame(maxWidth: .infinity)
@@ -435,8 +459,24 @@ struct PaywallView: View {
         .disabled(isBusy)
     }
 
+    private var restoreButton: some View {
+        Button {
+            Task { await subscription.restore() }
+        } label: {
+            Text("恢复购买")
+                .font(.system(size: 14))
+                .foregroundStyle(.white.opacity(0.65))
+                .frame(maxWidth: .infinity)
+                .frame(height: 40)
+        }
+        .buttonStyle(PlainButtonStyle())
+        .disabled(isBusy)
+    }
+
     private var legalFooter: some View {
-        Text("订阅到期前24小时内自动续订，可在系统设置中取消")
+        Text(selectedPlan == .lifetime
+            ? "一次购买，永久解锁 Pro"
+            : "订阅到期前24小时内自动续订，可在系统设置中取消")
             .font(.system(size: 11))
             .foregroundStyle(.white.opacity(0.32))
             .multilineTextAlignment(.center)

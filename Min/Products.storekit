@@ -14,7 +14,26 @@
 
   ],
   "products" : [
-
+    {
+      "displayPrice" : "98.0",
+      "familyShareable" : false,
+      "internalID" : "6500000003",
+      "localizations" : [
+        {
+          "description" : "一次性解锁全部 Pro 功能，永久有效",
+          "displayName" : "终身会员",
+          "locale" : "zh_Hans"
+        },
+        {
+          "description" : "Unlock all Pro features forever with a one-time purchase",
+          "displayName" : "Lifetime",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "Denghao.Min.pro.lifetime",
+      "referenceName" : "Lifetime Pro",
+      "type" : "NonConsumable"
+    }
   ],
   "settings" : {
     "_askToBuyEnabled" : false,
@@ -49,8 +68,8 @@
           "billingPlans" : [
             {
               "billingPlanType" : "BILLED_UPFRONT",
-              "commitmentDisplayPrice" : "12.0",
-              "displayPrice" : "12.0",
+              "commitmentDisplayPrice" : "6.0",
+              "displayPrice" : "6.0",
               "internalID" : "3920ACCD",
               "isEnabled" : true
             }
@@ -58,7 +77,7 @@
           "codeOffers" : [
 
           ],
-          "displayPrice" : "12.0",
+          "displayPrice" : "6.0",
           "familyShareable" : false,
           "groupNumber" : 1,
           "internalID" : "6500000001",
@@ -93,8 +112,8 @@
           "billingPlans" : [
             {
               "billingPlanType" : "BILLED_UPFRONT",
-              "commitmentDisplayPrice" : "108.0",
-              "displayPrice" : "108.0",
+              "commitmentDisplayPrice" : "48.0",
+              "displayPrice" : "48.0",
               "internalID" : "C7813D0D",
               "isEnabled" : true
             }
@@ -102,7 +121,7 @@
           "codeOffers" : [
 
           ],
-          "displayPrice" : "108.0",
+          "displayPrice" : "48.0",
           "familyShareable" : false,
           "groupNumber" : 2,
           "internalID" : "6500000002",

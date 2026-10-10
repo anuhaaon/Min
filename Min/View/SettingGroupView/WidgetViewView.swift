@@ -47,9 +47,18 @@ struct WidgetViewView: View {
                 )
 
                 let refSide: CGFloat = 360
-                let rowHeight: CGFloat = 50 * (side / refSide)
-                let spacing: CGFloat = fontSetting.fontSpacing * 2 * (side / refSide)
+                let scale = side / refSide
+                let rowHeight: CGFloat = 50 * scale
+                let spacing: CGFloat = fontSetting.fontSpacing * 2 * scale
                 let verticalPadding: CGFloat = 8 + fontSetting.fontSpacing * 0.6
+                // 与桌面 Large Widget 一致：左/右 30、居中 16，并按预览边长缩放
+                let horizontalPadding: CGFloat = {
+                    switch textAlignment {
+                    case .leading, .trailing: return 30 * scale
+                    case .center: return 16 * scale
+                    }
+                }()
+                let rowMaxWidth = max(side - horizontalPadding * 2, 0)
                 VStack(spacing: spacing) {
                     if groupItems.isEmpty {
                         WidgetStyledText(
@@ -58,29 +67,25 @@ struct WidgetViewView: View {
                             size: fontSetting.customFontSize,
                             color: fontSetting.actualFontColor.opacity(0.5)
                         )
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: textAlignment.asAlignment)
                     } else {
                         ForEach(groupItems) { item in
-                            HStack {
-                                WidgetStyledText(
-                                    text: item.name,
-                                    customFont: fontSetting.customFont,
-                                    size: fontSetting.customFontSize,
-                                    color: fontSetting.actualFontColor,
-                                    maxWidth: side - 32
-                                )
-                                .frame(maxWidth: .infinity, alignment: textAlignment.asAlignment)
-                                Spacer(minLength: 0)
-                            }
-                            .frame(maxWidth: .infinity)
+                            WidgetStyledText(
+                                text: item.name,
+                                customFont: fontSetting.customFont,
+                                size: fontSetting.customFontSize,
+                                color: fontSetting.actualFontColor,
+                                maxWidth: rowMaxWidth
+                            )
+                            .frame(maxWidth: .infinity, alignment: textAlignment.asAlignment)
                             .frame(height: rowHeight)
                         }
                     }
                 }
-                .padding(.horizontal, 16)
+                .padding(.horizontal, horizontalPadding)
                 .padding(.vertical, verticalPadding)
                 .frame(width: side, height: side)
-                .id("\(fontSetting.customFont.customFontStorageFileName ?? fontSetting.customFont.customFontPostScriptName ?? fontSetting.customFont.fontName.rawValue)-\(fontSetting.customFontSize)-\(fontSetting.fontSpacing)")
+                .id("\(fontSetting.customFont.customFontStorageFileName ?? fontSetting.customFont.customFontPostScriptName ?? fontSetting.customFont.fontName.rawValue)-\(fontSetting.customFontSize)-\(fontSetting.fontSpacing)-\(String(describing: textAlignment))")
             }
             .frame(width: side, height: side)
         }

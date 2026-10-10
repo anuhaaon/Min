@@ -155,8 +155,8 @@ struct MineView: View {
     private let aboutURL = "https://min.anuhao.com"
     private let privacyPolicyURL = "https://min.anuhao.com/privacy-policy"
     private let termsOfServiceURL = "https://min.anuhao.com/terms-of-service"
-    /// 上架后到 App Store Connect → App 信息 复制「Apple ID」填到这里（纯数字）。未填写时评分走系统弹窗。
-    private let appStoreID: String? = nil
+    /// App Store Connect → App 信息中的 Apple ID。用于跳转写评价页和分享商店链接。
+    private let appStoreID: String? = "6795857001"
     
     var body: some View {
         ZStack {

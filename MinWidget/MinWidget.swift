@@ -155,6 +155,7 @@ struct GroupWidgetView: View {
                 color: widgetTextColor.opacity(0.5),
                 asyncRender: false
             )
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: textAlignment.asAlignment)
             .padding(.horizontal, contentHorizontalPadding)
         } else {
             // 设置 0–20 对应实际 0–40pt，桌面小组件里间距更明显
@@ -163,23 +164,19 @@ struct GroupWidgetView: View {
                 ForEach(groupItems) { item in
                     if let finalURL = URL(string: item.url) {
                         Link(destination: finalURL) {
-                            HStack {
-                                GeometryReader { geo in
-                                    WidgetStyledText(
-                                        text: item.name,
-                                        customFont: fontSetting.customFont,
-                                        size: fontSetting.customFontSize,
-                                        color: widgetTextColor,
-                                        maxWidth: geo.size.width,
-                                        asyncRender: false
-                                    )
-                                    .frame(width: geo.size.width, height: geo.size.height, alignment: textAlignment.asAlignment)
-                                }
-                                .frame(height: 50)
-                                .frame(maxWidth: .infinity)
-                                
-                                Spacer(minLength: 0)
+                            GeometryReader { geo in
+                                WidgetStyledText(
+                                    text: item.name,
+                                    customFont: fontSetting.customFont,
+                                    size: fontSetting.customFontSize,
+                                    color: widgetTextColor,
+                                    maxWidth: geo.size.width,
+                                    asyncRender: false
+                                )
+                                .frame(width: geo.size.width, height: geo.size.height, alignment: textAlignment.asAlignment)
                             }
+                            .frame(height: 50)
+                            .frame(maxWidth: .infinity)
                         }
                     }
                 }

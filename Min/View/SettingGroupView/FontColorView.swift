@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct FontColorView: View {
     @Binding var fontSetting: FontSetting
@@ -15,6 +16,7 @@ struct FontColorView: View {
     
     // 仅保留三种颜色：白色、黑色、自定义
     private let colorOptions: [FontColor] = [.white, .black, .custom]
+    @State private var showCustomColorPicker = false
     
     // 获取显示的颜色
     private func getDisplayColor(for color: FontColor) -> Color {
@@ -80,6 +82,11 @@ struct FontColorView: View {
             }
             .frame(height: MinSettingChrome.rowHeight)
         }
+        .sheet(isPresented: $showCustomColorPicker) {
+            SystemColorPicker(color: customColorBinding)
+                .ignoresSafeArea()
+                .minNativeSheet(detents: [.height(620)])
+        }
         .onAppear {
             if !colorOptions.contains(fontSetting.fontColor) {
                 fontSetting.fontColor = .white
@@ -89,87 +96,66 @@ struct FontColorView: View {
     
     @ViewBuilder
     private func colorOptionView(_ color: FontColor) -> some View {
-        if color == .custom {
-            ZStack {
-                ColorPicker("", selection: customColorBinding, supportsOpacity: true)
-                    .labelsHidden()
-                    .frame(width: circleSize, height: circleSize)
-                    .opacity(0.015)
-                customSwatch
-                    .frame(width: circleSize, height: circleSize)
-                    .allowsHitTesting(false)
-                selectionIndicator(for: .custom)
-                    .frame(width: circleSize, height: circleSize)
-                    .allowsHitTesting(false)
+        Button {
+            fontSetting.fontColor = color
+            haptic.selection()
+            if color == .custom {
+                showCustomColorPicker = true
             }
-            .frame(width: circleSize, height: circleSize)
-            .clipped()
-            .contentShape(Circle())
-            .onTapGesture {
-                fontSetting.fontColor = .custom
-                haptic.selection()
-            }
-        } else {
-            Button {
-                fontSetting.fontColor = color
-                haptic.selection()
-            } label: {
-                Circle()
-                    .fill(getDisplayColor(for: color))
-                    .frame(width: circleSize, height: circleSize)
-                    .overlay(
-                        selectionIndicator(for: color)
-                    )
-            }
-            .buttonStyle(PlainButtonStyle())
-            .frame(width: circleSize, height: circleSize)
-            .contentShape(Circle())
-        }
-    }
-    
-    @ViewBuilder
-    private var customSwatch: some View {
-        if let rgb = fontSetting.customColorRGB {
+        } label: {
             Circle()
-                .fill(Color(red: rgb.red, green: rgb.green, blue: rgb.blue, opacity: rgb.alpha))
-        } else {
-            // 未选择自定义颜色时，显示彩色画盘占位
-            Circle()
-                .fill(
-                    AngularGradient(
-                        colors: [.red, .orange, .yellow, .green, .cyan, .blue, .purple, .red],
-                        center: .center
-                    )
-                )
+                .fill(getDisplayColor(for: color))
+                .frame(width: circleSize, height: circleSize)
                 .overlay(
-                    Image(systemName: "paintpalette.fill")
-                        .font(.system(size: 9))
-                        .foregroundStyle(.white.opacity(0.9))
+                    selectionIndicator(for: color)
                 )
         }
+        .buttonStyle(PlainButtonStyle())
+        .frame(width: circleSize, height: circleSize)
+        .contentShape(Circle())
     }
     
     private func selectionIndicator(for color: FontColor) -> AnyView {
         guard fontSetting.fontColor == color else {
             return AnyView(Circle().stroke(Color.clear, lineWidth: 0))
         }
-        
-        switch color {
-        case .white:
-            // 白色圆点在灰色背景上仅黑描边不够明显，使用黑内描+白外描增强对比
-            return AnyView(
-                ZStack {
-                    Circle().stroke(Color.white.opacity(0.95), lineWidth: 3)
-                    Circle().stroke(Color.black, lineWidth: 2)
-                }
-            )
-        case .black:
-            // 按需改回全白描边
-            return AnyView(Circle().stroke(Color.white, lineWidth: 2))
-        case .custom:
-            return AnyView(Circle().stroke(getDisplayColor(for: .custom), lineWidth: 2))
-        default:
-            return AnyView(Circle().stroke(Color.white, lineWidth: 2))
+        return AnyView(Circle().stroke(Color.white, lineWidth: 2))
+    }
+}
+
+/// 系统取色面板。不用 SwiftUI ColorPicker 色井，避免多边形外观溢出。
+private struct SystemColorPicker: UIViewControllerRepresentable {
+    @Binding var color: Color
+
+    func makeCoordinator() -> Coordinator {
+        Coordinator(color: $color)
+    }
+
+    func makeUIViewController(context: Context) -> UIColorPickerViewController {
+        let picker = UIColorPickerViewController()
+        picker.supportsAlpha = true
+        picker.selectedColor = UIColor(color)
+        picker.delegate = context.coordinator
+        return picker
+    }
+
+    func updateUIViewController(_ picker: UIColorPickerViewController, context: Context) {
+        context.coordinator.color = $color
+    }
+
+    final class Coordinator: NSObject, UIColorPickerViewControllerDelegate {
+        var color: Binding<Color>
+
+        init(color: Binding<Color>) {
+            self.color = color
+        }
+
+        func colorPickerViewControllerDidSelectColor(_ viewController: UIColorPickerViewController) {
+            color.wrappedValue = Color(uiColor: viewController.selectedColor)
+        }
+
+        func colorPickerViewControllerDidFinish(_ viewController: UIColorPickerViewController) {
+            color.wrappedValue = Color(uiColor: viewController.selectedColor)
         }
     }
 }
